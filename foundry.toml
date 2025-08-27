@@ -1,0 +1,19 @@
+[profile.default]
+out = "out"
+libs = ["lib"]
+test = "test"
+cache_path = "cache"
+via_ir = true
+ffi = true
+evm_version = "cancun"
+optimizer = true
+optimizer_runs = 1000000
+
+[rpc_endpoints]
+mainnet = "https://eth-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}"
+sepolia = "https://eth-sepolia.g.alchemy.com/v2/${ALCHEMY_API_KEY}"
+
+[fmt]
+line_length = 120
+tab_width = 4
+bracket_spacing = true
